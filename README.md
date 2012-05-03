@@ -10,7 +10,7 @@ The first part contains no technical information. It introduces free software an
 The second part provides a ROS, Arduino and Android demonstration system to promote free robotics development tools as accessible and state-of-the-art tools to learn robotics, to develop them professionally, and to contribute to the emergence of a sustainable free (as in free speech) hardware community.
 It is closely related to the [Driving an Arduino Board LED from an Android Device] [1] ROS tutorial which was written to describe the system in detail.
 
-    [1]: http://www.ros.org/wiki/android_sensors_driver/Tutorials/DrivingAnArduinoBoardFromAnAndroidDevice
+  [1]: http://www.ros.org/wiki/android_sensors_driver/Tutorials/DrivingAnArduinoBoardFromAnAndroidDevice
 
 ## Audience
 
@@ -26,10 +26,10 @@ the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, 
 no Back-Cover Texts. A copy of the license can be found at
 [http://www.gnu.org/copyleft/fdl.html] [2].
 
-    [2]: http://www.gnu.org/copyleft/fdl.html
+  [2]: http://www.gnu.org/copyleft/fdl.html
 
 ## Theme
 
 The presentation makes use of the [Santiago Beamer theme] [3].
 
-    [3]: https://github.com/gonzalo-bulnes/santiago-beamer-theme
+  [3]: https://github.com/gonzalo-bulnes/santiago-beamer-theme
