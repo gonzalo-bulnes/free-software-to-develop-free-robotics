@@ -1,0 +1,324 @@
+% -*- Mode: LaTeX; coding: utf-8; indent-tabs-mode: nil; tab-width: 2 -*-
+
+%% This code is part of the Free Software to Develop Free Robotics talk.
+% See http://gonzalobulnes.com/talks/8724820 for the last version.
+%
+% You should'nt compile this file directly, as it will be included by
+% the other .tex files.
+%%
+
+\begin{frame}[t,plain]
+  \maketitle
+\end{frame}
+
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+% Free Software Licenses
+\section{Free Software Licenses}
+
+  \begin{frame}
+    \tableofcontents[currentsection]
+  \end{frame}
+
+%
+\subsection{Definitions}
+
+  \begin{frame}{What Free Software Licenses Are}
+    \begin{description}
+      \item[Free Software] \emph{Users} have \emph{\alert{four essential freedoms}}:\\~\\
+      \item[Freedom 0] Run the program, for any purpose.
+      \item[Freedom 1] Study how the program works, and change it as they wish.
+      \item[Freedom 2] Redistribute copies.
+      \item[Freedom 2] Distribute copies of their modified versions to others. 
+    \end{description}
+    \begin{block}{Who?}
+      Google, Microsoft, Red Hat, Canonical, Nokia, Willow Garage\dots
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{How Free Software Licenses Work}
+    \begin{block}{Relying on \alert{copyright} international rules}
+    \end{block}
+    \begin{block}{Restricting the software/hardware distributon}
+      \begin{itemize}
+        \item If you won't modify it, use it as you want. (\emph{libraries, others})
+        \item You are allowed to modify it\dots
+          \begin{itemize}
+            \item Provided you respect some conditions.
+            \item These conditions protect your 4 \emph{essential freedoms}.\\~\\
+            \item Keep the copyright notices, add your own
+            \item Follow the license terms
+         \end{itemize}
+       \end{itemize}
+    \end{block}
+    \uncover<2->{\small{GNU GPL, CC BY-SA, New BSD License, GNU FDL\dots}}
+  \end{frame}
+
+%
+\subsection{Interesting Effects and Side-effects}
+
+  \begin{frame}{Effects}
+    \begin{block}{For Authors}
+      \begin{itemize}
+        \item Acknowlement for their work (community)
+        \item \emph{Protection} (publicly available copyrighted code can't be stolen)
+      \end{itemize}
+    \end{block}
+    \begin{block}{Consequences}
+      \begin{itemize}
+        \item Developers do no longer sell their code, instead they sell their \emph{hability} to write new code.
+        \item High quality libraries available (\emph{Qt}, \emph{ROS})
+        \item \emph{Cooperation}, incremental work, and \alert{innovation} get boosted.
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{Side-effects}
+    \begin{block}{Products Value Evolution}
+      \begin{enumerate}
+        \item Cool products
+        \item Agility: Products which match \alert{now} the needs of their users
+        \item Value-driven development: develop \emph{only} what users really value
+      \end{enumerate}
+    \end{block}
+    \begin{block}{Company Value}
+      \begin{itemize}
+        \item Embracing change thanks to creative people
+        \item Intrinsic motivation \cite{pink2011drive}
+      \end{itemize}
+    \end{block}
+    \begin{description}
+      \item[Video:] Tom Preston Werner at StarTechConf 2011 \url{http://continuum.cl/videos/32646756}
+    \end{description}
+  \end{frame}
+
+  \begin{frame}{One Word about Sustainability}
+      \hspace{.9em}\ding{125}\vspace{-1.4em}
+      \begin{quote}
+        If you don't make money from your work, you won't be able to commit it back to the upstream developers.\hspace{.5em}\ding{126}
+      \end{quote}\\~\\ \vfill
+      Make money the way you feel confortable with, but try to do it.
+  \end{frame}
+
+%
+\subsection{Free Hardware}
+
+  \begin{frame}{FLOSH Proposals}
+    The same principles are now being applied to hardware.\\~\\
+    \begin{columns}
+      \column{.5\textwidth}
+        \vspace{.5cm}
+        \begin{center}
+          \includegraphics[width=.35\textwidth]{vendor/images/arduino_logo.png} \hspace{.1\textwidth}
+          \includegraphics[width=.5\textwidth]{vendor/images/fritzing_logo.pdf}\\~\\
+          \includegraphics[width=.25\textwidth]{vendor/images/lasersaur.jpg} \hspace{.1\textwidth}
+          \includegraphics[width=.6\textwidth]{vendor/images/protei.png}\\~\\
+        \end{center}
+      \column{.5\textwidth}
+        \begin{center}
+          \includegraphics[width=.8\textwidth]{vendor/images/oshw-logo.pdf}
+        \end{center}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}
+    \vfill
+    Free robotics standards are being defined now, it's a very great moment to contribute.\\
+    Be creative, share and ship your ideas!
+    \vfill\vfill
+    \begin{columns}
+      \column{.2\textwidth}
+      \column{.8\textwidth}
+        \begin{quote}
+          \hfill\ding{125}\hspace{.3em}\small \href{http://diveintohtml5.info/past.html}{The ones that win are the ones that ship.}\normalsize\hspace{.5em}\ding{126}\\
+          \hfill \small --- Mark Pilgrim \cite{pilgrim2010html5}\normalsize
+        \end{quote}
+    \end{columns}
+  \end{frame}
+
+% ROS and Arduino Free Dev Stack
+\section{ROS and Arduino Free Dev Stack}
+
+  \begin{frame}
+    \tableofcontents[currentsection]
+  \end{frame}
+
+%
+\subsection{A Carrot and Development Stack}
+
+  \begin{frame}{Aims}
+    \begin{alertblock}{This How-to Aim}
+      Install a complete enough free development stack to enjoy a great "\href{http://www.atlassian.com/fedex-day}{FedEx~day}" with ROS.
+    \end{alertblock}
+    \begin{block}{The Carrot: System Overview}
+      \begin{center}
+        \only<1>{\includegraphics[width=\textwidth]{images/system-overview-1.pdf}}
+        \only<2>{\includegraphics[width=\textwidth]{images/system-overview-2.pdf}}
+        \only<3>{\includegraphics[width=\textwidth]{images/system-overview-3.pdf}}
+      \end{center}
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{How to Install the Development Stack}
+    \begin{block}{Ubuntu}
+      \begin{itemize}
+       \item \url{http://www.ubuntu.com/download}
+       \item Instructions are given on the official website for several configurations.
+      \end{itemize}
+    \end{block}
+    \begin{block}{Arduino IDE}
+      \begin{itemize}
+       \item Direct install from Ubuntu:\\
+             \texttt{\$ sudo apt-get install \alert{arduino}}
+      \end{itemize}
+    \end{block}
+    \begin{block}{ROS}
+      \begin{itemize}
+       \item Follow instructions from the ROS Wiki to install\\
+             the \alert{\texttt{ros-electric-desktop-full}} Ubuntu package 
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+%
+\subsection{How Our Example Works}
+
+  \begin{frame}{ROS Nodes and Communications}
+    \begin{center}
+      % These PDF files are created by Inkscape from the SVG sources.
+      % File > Save a copy... File type: PDF 1.4, bitmap rasterization, 90ppp,
+      % and the exported area is a page. This is not a very
+      % straightforward way to generate them, but it works pretty well and
+      % produces vectorial images :) to be used by LaTeX.
+
+      % I don't know why LaTeX places differently the first diagram if all have
+      % the same size. The \vspace{1.2mm} fixes that.
+      \only<1>{\vspace{1.2mm}\includegraphics[width=\textwidth]{images/nodes-overview-1.pdf}}
+      \only<2>{\includegraphics[width=\textwidth]{images/nodes-overview-2.pdf}}
+      \only<3>{\includegraphics[width=\textwidth]{images/nodes-overview-3.pdf}}
+      \only<4>{\includegraphics[width=\textwidth]{images/nodes-overview-4.pdf}}
+    \end{center}
+  \end{frame}
+
+  \begin{frame}{ROS Messages and Action}
+    \begin{center}
+      \only<1>{\includegraphics[width=\textwidth]{images/messages-resized-1.pdf}}
+      \only<2>{\includegraphics[width=\textwidth]{images/messages-resized-2.pdf}}
+      \only<3>{\includegraphics[width=\textwidth]{images/messages-resized-3.pdf}}
+      \only<4>{\includegraphics[width=\textwidth]{images/messages-resized-4.pdf}}
+      \only<5>{\includegraphics[width=\textwidth]{images/messages-resized-5.pdf}}
+      \only<6>{\includegraphics[width=\textwidth]{images/messages-resized-6.pdf}}
+      \only<7>{\includegraphics[width=\textwidth]{images/messages-resized-7.pdf}}
+      \only<8>{\includegraphics[width=\textwidth]{images/messages-resized-8.pdf}}
+      \only<9>{\includegraphics[width=\textwidth]{images/messages-resized-9.pdf}}
+      \only<10>{\includegraphics[width=\textwidth]{images/messages-resized-10.pdf}}
+    \end{center}
+  \end{frame}
+
+%
+\subsection{Learning and Getting Help}
+
+  \begin{frame}{ROS Tutorials}
+    \begin{itemize}
+      \item ROS Tutorials are very well organized\\~\\
+      \item First: \alert{the code}
+        \begin{itemize}
+          \item Straightforward usage description
+          \item The code can often be used \alert{as-is}
+        \end{itemize}
+      \item Then: \alert{the code explained}
+        \begin{itemize}
+          \item Detailled description of the code functionality
+          \item A great place to learn!
+        \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Our Example Tutorials}
+    \begin{description}
+      \item[Master:] just read the Getting Started tutorials
+      \item[Arduino:] \alert{\texttt{rosserial\textunderscore arduino}} (ROS library)\\
+                           \href{http://www.ros.org/wiki/rosserial\textunderscore arduino/Tutorials}{wiki/rosserial\textunderscore arduino/Tutorials}\\
+      \item[Android:] \alert{\texttt{arduino\textunderscore sensors\textunderscore driver}} (ROS library)\\
+                           \href{http://www.ros.org/wiki/android\textunderscore sensors\textunderscore driver/Tutorials}{wiki/android\textunderscore sensors\textunderscore driver/Tutorials}\\
+      \item[Android to Arduino:] Subscriber and publisher (Python)\\
+                                 See \texttt{arduino\textunderscore sensors\textunderscore driver} tutorials.
+    \end{description}
+  \end{frame}
+
+% Conclusion
+\section*{Conclusion}
+
+  \begin{frame}{\insertsection}
+    \begin{itemize}
+      \item Free software is here, free \alert{hardware} is rising.
+      \item Free robotics tools are \emph{state-of-the-art} and often cheap tools.
+      \item You can use them while working with \emph{modern working methods}.
+      \item You can \emph{learn} robotics using them.\\~\\
+      \item If you're entrepreneur, you can grow using free software and hardware while taking into account your developers' \emph{intrinsic motivation}.
+    \end{itemize}
+  \end{frame}
+
+\appendix
+
+% Further Reading
+\section{Further Reading}
+
+%
+\subsection{References}
+
+  \begin{frame}{\insertsubsection}
+    \bibliography{biblio}{}
+    \bibliographystyle{plain}
+    % Learn Python!
+    \nocite{pilgrim2004dive}
+  \end{frame}
+
+%
+\subsection{This Document is Free}
+
+  % Sources of images from other authors:
+  % (Propriety of their authors!)
+  % http://www.ros.org/_wiki/images/ros_org.png
+  % http://fritzing.org/media/uploads/logo/fritzing_logo_rev3-FRITZING.svg (resized)
+  % http://arduino.cc/en/pub/skins/arduinoWide_SSO/img/logo.png
+  % https://sites.google.com/a/opensailing.net/protei/_/rsrc/1320097246344/config/customLogo.gif?revision=18 (cropped)
+  % http://oshwlogo.com/logos/oshw-logo.svg
+  % http://en.wikipedia.org/wiki/File:Android_robot.svg
+  % http://en.wikipedia.org/wiki/File:Arduino_Duemilanove_2009b.jpg
+  % http://design.ubuntu.com/wp-content/uploads/logo-ubuntu_no%C2%AE-black_orange-hex.svg
+
+  \begin{frame}{\insertsubsection}
+
+    \footnotesize
+      \begin{columns}
+        \column{.6\textwidth}
+          This \href{https://gonzalobulnes.com/talks/8724820.pdf}{document}, its \href{https://gonzalobulnes.com/talks/8724820.tar.gz}{sources}, and the \href{https://gonzalobulnes.com/code/2347623.tar.gz}{Beamer theme Santiago} can be found at:\\~\\
+          \url{https://gonzalobulnes.com/talks/8724820}    
+        \column{.3\textwidth}
+        \hfill\includegraphics[width=\textwidth]{images/sources-talk.png}
+      \end{columns}
+    \normalsize
+
+    \scriptsize{Unless where otherwise noted:}\\
+    \noindent\scriptsize{Copyright~\copyright~2012~Gonzalo~Bulnes~Guilpain}\\~\\
+
+    \scriptsize{Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license can be found at \url{http://www.gnu.org/copyleft/fdl.html}.}
+  \end{frame}
+
+%
+\subsection{Thanks}
+
+  \begin{frame}
+    \vspace{0mm}
+    \begin{center}
+      Thank you for paying attention.     
+    \end{center}
+  \end{frame}
+% EOF

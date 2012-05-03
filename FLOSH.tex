@@ -1,0 +1,82 @@
+% -*- Mode: LaTeX; coding: utf-8; indent-tabs-mode: nil; tab-width: 2 -*-
+
+%% Free Software to Develop Free Robotics
+%
+% This talk is intended to give people the wish to use free software and
+% hardware to share knowledge about and learn robotics, create robots, and
+% make money from their work in order to build a strong free hardware community.
+%
+% It was initially presented at the 4th Robots Chile meetup in Santiago, Chile,
+% on april 16, 2012.
+% Its contents are released under the GNU Free Documentation License, and its
+% sources (including this and the SVG sources) under the 2-clause BSD license,
+% as most of the ROS code is.
+%
+% Author: Gonzalo Bulnes Guilpain <gon.bulnes@gmail.com>
+% URL: http://gonzalobulnes.com/talks/8724820
+% Revision 1
+% 2012-04-20
+%
+% Copyright (C) 2012 Gonzalo Bulnes Guilpain
+%
+% Redistribution and use in source and binary forms, with or without
+% modification, are permitted provided that the following conditions are met:
+%
+% * Redistributions of source code must retain the above copyright notice,
+% this list of conditions and the following disclaimer.
+%
+% * Redistributions in binary form must reproduce the above copyright notice,
+% this list of conditions and the following disclaimer in the documentation
+% and/or other materials provided with the distribution.
+%
+% THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+% WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+% MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+% IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+% SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+% PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+% OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+% WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+% OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+% OF THE POSSIBILITY OF SUCH DAMAGE.
+%%
+
+\documentclass{beamer}
+
+\usetheme[pageofpages=de,titlepagelogo=vendor/images/robotschile]{Santiago}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Links and URL
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    %citecolor=black,
+    %filecolor=black,
+    %linkcolor=black,
+    %urlcolor=black,
+    pdfauthor={Gonzalo Bulnes Guilpain},
+    pdftitle={Free Software to Develop Free Robotics},
+    pdfsubject={Robotics, Licenses, Working Methods},
+    pdfkeywords={robotics, FLOSS, FLOSH, free software, open-source hardware, intrinsic motivation, agile development},
+    pdftex
+}
+
+% Ornaments
+\usepackage{fourier-orns}
+\usepackage{pifont}
+
+\author{Gonzalo Bulnes Guilpain}
+\title[Free Robotics]{Free Software to Develop Free Robotics}
+\subtitle{A free (as in free speech) development stack with Ubuntu, ROS and Arduino}
+\titlegraphic{\aldine} % This is an ornament!
+\institute{$4^{th}$ Meetup Robots Chile}
+\date{April, 2012}
+\logo{\includegraphics[height=7mm]{vendor/images/robotschile-blanco}}
+
+\begin{document}
+\include{FLOSH-content-en}
+\end{document}
+% EOF
