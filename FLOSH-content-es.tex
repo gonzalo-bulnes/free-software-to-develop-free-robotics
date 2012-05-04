@@ -1,0 +1,325 @@
+% -*- Mode: LaTeX; coding: utf-8; indent-tabs-mode: nil; tab-width: 2 -*-
+
+%% This code is part of the Free Software to Develop Free Robotics talk.
+% See http://gonzalobulnes.com/talks/8724820 for the last version.
+%
+% You should'nt compile this file directly, as it will be included by
+% the other .tex files.
+%%
+
+\begin{frame}[t,plain]
+  \maketitle
+\end{frame}
+
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+% Licencias de software libre
+\section{Licencias de software libre}
+
+  \begin{frame}
+    \tableofcontents[currentsection]
+  \end{frame}
+
+%
+\subsection{Definiciones}
+
+  \begin{frame}{¿Qué son las licencias de software libre?}
+    \begin{description}
+      \item[Software libre] Sus \emph{usuarios} tienen \emph{\alert{cuatro libertades esenciales}}:\\~\\
+      \item[Libertad 0] Ejecutar el programa, con cualquier propósito.
+      \item[Libertad 1] Estudiar cómo funciona el programa, y modificarlo si lo desean.
+      \item[Libertad 2] Redistribuir copias del programa.
+      \item[Libertad 2] Distribuir copias de sus versiones modificadas a otras personas. 
+    \end{description}
+    \begin{block}{¿Quién?}
+      Google, Microsoft, Red Hat, Canonical, Nokia, Willow Garage\dots
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{¿Cómo funcionan las licencias de software libre?}
+    \begin{block}{Están basadas en las leyes internacionales sobre \alert{copyright}}
+    \end{block}
+    \begin{block}{Restringen la distribución del software/hardware}
+      \begin{itemize}
+        \item Si no lo modificas, úsalo como quieras. (\emph{bibliotecas, otras})
+        \item Tienes permiso para modificarlo\dots
+          \begin{itemize}
+            \item Siempre que respetes ciertas condiciones.
+            \item Esas condiciones protegen tus 4 \emph{libertades esenciales}.\\~\\
+            \item Conserva las menciones de copyright, agrega la tuya
+            \item Sigue los términos de la licencia
+         \end{itemize}
+       \end{itemize}
+    \end{block}
+    \uncover<2->{\small{GNU GPL, CC BY-SA, Nueva licencia BSD, GNU FDL\dots}}
+  \end{frame}
+
+%
+\subsection{Efectos directos y secundarios interesantes}
+
+  \begin{frame}{Efectos}
+    \begin{block}{Para las autoras}
+      \begin{itemize}
+        \item Reconocimiento por su trabajo (comunidad)
+        \item \emph{Protección} (el código publicado con copyright no se puede robar)
+      \end{itemize}
+    \end{block}
+    \begin{block}{Consecuencias}
+      \begin{itemize}
+        \item Desarrolladores y desarrolladoras ya no venden su código, sino su \emph{habilidad} para escribir código original.
+        \item Bibliotecas de gran calidad están disponibles (\emph{Qt}, \emph{ROS})
+        \item Incentivo para \emph{cooperación}, trabajo incremental, e \alert{innovación}.
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{Efectos secundarios}
+    \begin{block}{Evolución en el valor de los productos}
+      \begin{enumerate}
+        \item Products muy buenos
+        \item Agilidad: Productos que coinciden \alert{en este momento} con las necesidades de sus usuarios
+        \item \emph{Value-driven development}: desarrollar \emph{solamente} aquello que los usuarios valoran
+      \end{enumerate}
+    \end{block}
+    \begin{block}{Valor de la empresa}
+      \begin{itemize}
+        \item Acompañar el cambio gracias a gente creativa
+        \item Motivation intrínseca \cite{pink2011drive}
+      \end{itemize}
+    \end{block}
+    \begin{description}
+      \item[Video:] Tom Preston Werner en la StarTechConf 2011 \url{http://continuum.cl/videos/32646756}
+    \end{description}
+  \end{frame}  
+
+  \begin{frame}{Dos palabras sobre sustentabilidad}
+      \hspace{.9em}\ding{125}\vspace{-1.4em}
+      \begin{quote}
+        Si no ganas dinero con tu trabajo, no podrás tampoco retribuir a quienes desarrollan los productos con los que trabajas.\hspace{.5em}\ding{126}
+      \end{quote}\\~\\ \vfill
+      Haz que tu trabajo rinda dinero, házlo de la forma que tú prefieras, pero intenta hacerlo.
+  \end{frame}
+
+%
+\subsection{Hardware libre}
+
+  \begin{frame}{Propuestas de hardware libre}
+    Hoy los principios presentados están siendo aplicados al hardware.\\~\\
+    \begin{columns}
+      \column{.5\textwidth}
+        \vspace{.5cm}
+        \begin{center}
+              \includegraphics[width=.35\textwidth]{vendor/images/arduino_logo.png} \hspace{.1\textwidth}
+              \includegraphics[width=.5\textwidth]{vendor/images/fritzing_logo.pdf}\\~\\
+              \includegraphics[width=.25\textwidth]{vendor/images/lasersaur.jpg} \hspace{.1\textwidth}
+          \includegraphics[width=.6\textwidth]{vendor/images/protei.png}\\~\\
+        \end{center}
+      \column{.5\textwidth}
+        \begin{center}
+          \includegraphics[width=.8\textwidth]{vendor/images/oshw-logo.pdf}
+        \end{center}
+    \end{columns}
+  \end{frame}
+
+  \begin{frame}
+    \vfill
+    En este momento se está definiendo lo que será la robótica libre, es un momento privilegiado para hacer aportes.\\~\\
+    Sé creativo, creativa, comparte, y haz realidad tus ideas!
+    \vfill\vfill
+    \begin{columns}
+      \column{.2\textwidth}
+      \column{.8\textwidth}
+        \begin{quote}
+          \hfill\ding{125}\hspace{.3em}\small \href{http://diveintohtml5.info/past.html}{The ones that win are the ones that ship.}\normalsize\hspace{.5em}\ding{126}\\
+          \hfill \small --- Mark Pilgrim \cite{pilgrim2010html5}\normalsize
+        \end{quote}
+    \end{columns}
+  \end{frame}
+
+% Entorno de desarrollo libre con ROS y Arduino
+\section{Entorno de desarrollo libre con ROS y Arduino}
+
+  \begin{frame}
+    \tableofcontents[currentsection]
+  \end{frame}
+
+%
+\subsection{Una zanahoria y un entorno de desarrollo}
+
+  \begin{frame}{Objetivos}
+    \begin{alertblock}{Objetivos de este tutorial}
+      Instalar un entorno de desarrollo suficiente para disfrutar un buen ``\href{http://www.atlassian.com/fedex-day}{día-FedEx}'' con ROS.
+    \end{alertblock}
+    \begin{block}{La zanahoria: vista general del sistema}
+      \begin{center}
+        \only<1>{\includegraphics[width=\textwidth]{images/system-overview-1.pdf}}
+        \only<2>{\includegraphics[width=\textwidth]{images/system-overview-2.pdf}}
+        \only<3>{\includegraphics[width=\textwidth]{images/system-overview-3.pdf}}
+      \end{center}
+    \end{block}
+  \end{frame}
+
+  \begin{frame}{Cómo instalar el entorno de desarrollo}
+    \begin{block}{Ubuntu}
+      \begin{itemize}
+       \item \url{http://www.ubuntu.com/download}
+       \item La página oficial provee instrucciones para varias configuraciones.
+      \end{itemize}
+    \end{block}
+    \begin{block}{Arduino IDE}
+      \begin{itemize}
+       \item Instalación directa desde Ubuntu:\\
+             \texttt{\$ sudo apt-get install \alert{arduino}}
+      \end{itemize}
+    \end{block}
+    \begin{block}{ROS}
+      \begin{itemize}
+       \item Sigue las instrucciones del Wiki de ROS para instalar\\
+             el paquete de Ubuntu llamado \alert{\texttt{ros-electric-desktop-full}} 
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+%
+\subsection{Cómo funciona nuestro ejemplo}
+
+  \begin{frame}{Nodos ROS y comunicaciones}
+    \begin{center}
+      % These PDF files are created by Inkscape from the SVG sources.
+      % File > Save a copy... File type: PDF 1.4, bitmap rasterization, 90ppp,
+      % and the exported area is a page. This is not a very
+      % straightforward way to generate them, but it works pretty well and
+      % produces vectorial images :) to be used by LaTeX.
+
+      % I don't know why LaTeX places differently the first diagram if all have
+      % the same size. The \vspace{1.2mm} fixes that.
+      \only<1>{\includegraphics[width=\textwidth]{images/nodes-overview-1.pdf}}
+      \only<2>{\includegraphics[width=\textwidth]{images/nodes-overview-2.pdf}}
+      \only<3>{\includegraphics[width=\textwidth]{images/nodes-overview-3.pdf}}
+      \only<4>{\includegraphics[width=\textwidth]{images/nodes-overview-4.pdf}}
+    \end{center}
+  \end{frame}
+
+  \begin{frame}{Mensajes y acción}
+    \begin{center}
+      \only<1>{\includegraphics[width=\textwidth]{images/messages-resized-1.pdf}}
+      \only<2>{\includegraphics[width=\textwidth]{images/messages-resized-2.pdf}}
+      \only<3>{\includegraphics[width=\textwidth]{images/messages-resized-3.pdf}}
+      \only<4>{\includegraphics[width=\textwidth]{images/messages-resized-4.pdf}}
+      \only<5>{\includegraphics[width=\textwidth]{images/messages-resized-5.pdf}}
+      \only<6>{\includegraphics[width=\textwidth]{images/messages-resized-6.pdf}}
+      \only<7>{\includegraphics[width=\textwidth]{images/messages-resized-7.pdf}}
+      \only<8>{\includegraphics[width=\textwidth]{images/messages-resized-8.pdf}}
+      \only<9>{\includegraphics[width=\textwidth]{images/messages-resized-9.pdf}}
+      \only<10>{\includegraphics[width=\textwidth]{images/messages-resized-10.pdf}}
+    \end{center}
+  \end{frame}
+
+%
+\subsection{Aprender y encontrar ayuda}
+
+  \begin{frame}{Tutoriales de ROS}
+    \begin{itemize}
+      \item Los tutoriales de ROS están muy bien organizados
+      \item Desgraciadamente, por ahora solo en inglés\\~\\
+      \item Primero: \alert{el código} (\emph{the code})
+        \begin{itemize}
+          \item Una descripción del uso muy directa
+          \item El código a menudo puede usarse \alert{tal cual}
+        \end{itemize}
+      \item Luego: \alert{el código explicado} (\emph{the code explained})
+        \begin{itemize}
+          \item Una descripción detallada de la funcionalidad del código
+          \item Un excelente lugar para aprender!
+        \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Los tutoriales de nuestro ejemplo}
+    \begin{description}
+      \item[Master:] solo necesitas leer \emph{¿Por dónde empezar?} (\emph{Getting Started})
+      \item[Arduino:] \alert{\texttt{rosserial\textunderscore arduino}} (ROS library)\\
+                           \href{http://www.ros.org/wiki/rosserial\textunderscore arduino/Tutorials}{wiki/rosserial\textunderscore arduino/Tutorials}\\
+      \item[Android:] \alert{\texttt{arduino\textunderscore sensors\textunderscore driver}} (ROS library)\\
+                           \href{http://www.ros.org/wiki/android\textunderscore sensors\textunderscore driver/Tutorials}{wiki/android\textunderscore sensors\textunderscore driver/Tutorials}\\
+      \item[Android to Arduino:] Subscriptor y publicador (\emph{Subscriber and publisher}) (Python)\\
+                                 Ver los tutoriales de \texttt{arduino\textunderscore sensors\textunderscore driver}.
+    \end{description}
+  \end{frame}
+
+% Conclusión
+\section*{Conclusión}
+  
+  \begin{frame}{\insertsection}
+    \begin{itemize}
+      \item El software libre es una realidad, el \alert{hardware} libre está surgiendo.
+      \item Las herramientas libres para robótica están \emph{a la punta de la tecnología}.
+      \item Puedes usarlas en conjunto con \emph{métodos de trabajo modernos}.
+      \item Puedes \emph{aprender} robótica con ellas.\\~\\
+      \item Si estás emprendiendo, puedes crecer usando software y hardware libres y al mismo tiempo aprovechar la \emph{motivación intrínseca} de tus desarrolladoras.
+    \end{itemize}
+  \end{frame}
+
+\appendix
+
+% Un poco de lectura
+\section{Un poco de lectura}
+
+%
+\subsection{Referencias}
+
+  \begin{frame}{\insertsubsection}
+    \bibliography{biblio}{}
+    \bibliographystyle{plain}
+    % Learn Python!
+    \nocite{pilgrim2004dive}
+  \end{frame}
+
+%
+\subsection{Este documento es libre}
+
+  % Sources of images from other authors:
+  % (Propriety of their authors!)
+  % http://www.ros.org/_wiki/images/ros_org.png
+  % http://fritzing.org/media/uploads/logo/fritzing_logo_rev3-FRITZING.svg (resized)
+  % http://arduino.cc/en/pub/skins/arduinoWide_SSO/img/logo.png
+  % https://sites.google.com/a/opensailing.net/protei/_/rsrc/1320097246344/config/customLogo.gif?revision=18 (cropped)
+  % http://oshwlogo.com/logos/oshw-logo.svg
+  % http://en.wikipedia.org/wiki/File:Android_robot.svg
+  % http://en.wikipedia.org/wiki/File:Arduino_Duemilanove_2009b.jpg
+  % http://design.ubuntu.com/wp-content/uploads/logo-ubuntu_no%C2%AE-black_orange-hex.svg
+
+  \begin{frame}{\insertsubsection}
+
+    \footnotesize
+      \begin{columns}
+        \column{.6\textwidth}
+          Este \href{https://gonzalobulnes.com/talks/8724820.pdf}{documento}, sus \href{https://gonzalobulnes.com/talks/8724820.tar.gz}{fuentes}, y el \href{https://gonzalobulnes.com/code/2347623.tar.gz}{tema para Beamer llamado Santiago} están disponibles en:\\~\\
+          \url{https://gonzalobulnes.com/talks/8724820}    
+        \column{.3\textwidth}
+        \hfill\includegraphics[width=\textwidth]{images/sources-talk.png}
+      \end{columns}
+    \normalsize
+
+    \scriptsize{Menos mención contraria:}\\
+    \noindent\scriptsize{Copyright~\copyright~2012~Gonzalo~Bulnes~Guilpain}\\~\\
+
+    \scriptsize{Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license can be found at \url{http://www.gnu.org/copyleft/fdl.html}.}
+  \end{frame}
+
+%
+\subsection{Agradecimientos}
+
+  \begin{frame}
+    \vspace{0mm}
+    \begin{center}
+      Gracias por su atención.     
+    \end{center}
+  \end{frame}
+% EOF

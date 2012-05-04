@@ -1,0 +1,53 @@
+% -*- Mode: LaTeX; coding: utf-8; indent-tabs-mode: nil; tab-width: 2 -*-
+
+%% Software libre para desarrollar robótica libre
+% Para efectos de licencia, este código se considera parte del de la charla
+% en inglés. El código está en inglés, porque creo que es mejor así.
+%%
+
+%% This code is part of the Free Software to Develop Free Robotics talk.
+% See http://gonzalobulnes.com/talks/8724820 for the last version.
+%
+% You should'nt compile this file directly, as it will be included by
+% the other .tex files.
+%%
+
+\documentclass{beamer}
+
+\usetheme[pageofpages=de,titlepagelogo=vendor/images/robotschile]{Santiago}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+% Links and URL
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    %citecolor=black,
+    %filecolor=black,
+    %linkcolor=black,
+    %urlcolor=black,
+    pdfauthor={Gonzalo Bulnes Guilpain},
+    pdftitle={Software libre para desarrollar robótica libre},
+    pdfsubject={robótica, licencias, métodos de trabajo},
+    pdfkeywords={robótica, FLOSS, FLOSH, software libre, hardware open-source, motivatión intrínseca, desarrollo ágil},
+    pdftex
+}
+
+% Ornaments
+\usepackage{fourier-orns}
+\usepackage{pifont}
+
+\author{Gonzalo Bulnes Guilpain}
+\title[Robótica libre]{Software libre para desarrollar robótica libre}
+\subtitle{Un entorno de desarrollo libre con Ubuntu, ROS y Arduino}
+\titlegraphic{\aldine} % This is an ornament!
+\institute{$4^{o}$ Meetup Robots Chile}
+\date{19 de abril 2012}
+\logo{\includegraphics[height=7mm]{vendor/images/robotschile-blanco}}
+
+\begin{document}
+\include{FLOSH-content-es}
+\end{document}
+% EOF
