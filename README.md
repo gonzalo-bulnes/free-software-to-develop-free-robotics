@@ -3,7 +3,7 @@ Free Software to Develop Free Robotics
 
 ## Abstract
 
-This two-part twenty-minute talk introduces a free robotics development stack composed by Ubuntu, ROS and the Arduino IDE.
+This two-part twenty-minute talk introduces a free robotics development stack composed by Ubuntu, ROS and the Arduino IDE. ([PDF in English](https://github.com/gonzalo-bulnes/free-software-to-develop-free-robotics/raw/master/FLOSH.pdf) and [PDF in Spanish](https://github.com/gonzalo-bulnes/free-software-to-develop-free-robotics/raw/master/FLOSH-es.pdf))
 
 The first part contains no technical information. It introduces free software and hardware licenses, explains how they incentive collaborative work and innovation, and, beyond that, how their use can lead to an evolution in the perception companies have of the value of their developers and products, with significant effects on the adoption of modern working methods (agile and value-driven development) and environements (intrinsic motivation).
 
@@ -28,8 +28,24 @@ no Back-Cover Texts. A copy of the license can be found at
 
   [2]: http://www.gnu.org/copyleft/fdl.html
 
+## Events
+
+I've presented this talk at:
+
+- [Robots Chile 4th Meetup][robots-chile-meetup], April 2012, Santiago, Chile
+
+  [robots-chile-meetup]: http://www.meetup.com/Robots-Chile
+
 ## Theme
 
 The presentation makes use of the [Santiago Beamer theme] [3].
 
   [3]: https://github.com/gonzalo-bulnes/santiago-beamer-theme
+
+## See Also
+
+You liked this talk? You may want to take a look at:
+
+- (Upcoming) [You Don't Know Everything][ydne] A 45-minute talk about agility, living organisms and models, which features some practical examples on how we, at Acid Labs, apply the emergence principles to build agile teams.
+
+  [ydne]: https://github.com/gonzalo-bulnes/you-dont-know-everything
